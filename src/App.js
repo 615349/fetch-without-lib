@@ -43,8 +43,7 @@ class App extends Component {
             this.setState({ coins, hasError: false })
           })
           .catch((e) => {
-            console.error(e);
-            this.setState({ hasError: true })
+            this.setState({ hasError: true, coins: [] })
           })
   }
 }
